@@ -1,0 +1,149 @@
+/*start global rules*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f6e58d;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.behind-animation {
+    animation-name: behind;
+}
+
+/*start components*/
+
+.box button {
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #9b59b6;
+    color: white;
+    border: none;
+    border-bottom: 2px solid #8e44ad;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
+}
+
+.behind {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: -10px;
+    border-radius: 5px;
+    border: 2px solid #8e44ad;
+    background-color: #9b59b6;
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-duration: 0.1s;
+}
+
+@keyframes behind {
+    from {
+        top: -10px;
+    }
+    to {
+        top: -3px;
+    }
+}
+
+/*end components*/
+
+/*end global rules*/
+
+/*box*/ 
+
+.box {
+    text-align: center;
+}
+
+/*start fist box*/
+
+.first h3 {
+    text-transform: capitalize;
+    font-size: 25px;
+}
+
+.first h3 span {
+    color: #00d26a;
+}
+
+.first p {
+    font-weight: 300;
+    text-transform: capitalize;
+    margin: 35px 0;
+}
+
+.first p:first-of-type span:first-of-type {
+    color: #ffc83d;
+    margin: 0 3px;
+}
+
+.first p:first-of-type span:last-of-type {
+    font-weight: bold;
+    margin: 0 3px;
+}
+
+.first p:last-of-type span {
+    color: #9b59b6;
+    font-weight: bold;
+}
+
+/*end fist box*/
+
+/*start second box*/
+
+.second {
+    background-color: #f6e58da5;
+    padding: 25px;
+    max-width: 100%;
+}
+
+.second h1 {
+    color: #9b59b6;
+    text-shadow: 2px 2px #0000009e;
+    width: 45vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.second .background {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100vh;
+    left: 4px;
+    top: 0;
+    overflow: hidden;
+    z-index: -1;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+
+.second .background .money-bill {
+    color: #6ab04c;
+    margin-right: 4px;
+}
+
+.second button {
+    margin: 25px 20px 0 20px;
+}
+
+.second button:last-of-type {
+    display: block;
+    margin-top: 35px;
+}
+
+/*end second box*/
+
+/*box*/ 
